@@ -1,0 +1,12 @@
+{
+  "name": "ikuai",
+  "version": "1.0.3",
+  "description": "An ikuai router API SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://www.ltgzs.top",
+  "author": "Unics Yu",
+  "license": "ISC"
+}
