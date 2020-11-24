@@ -1,6 +1,15 @@
 var http = require('http')
+const crypto = require("crypto")
 class iKuai {
-	constructor(host, port, login_info, https) {
+	constructor(host, port, username, password, https) {
+		let passwd = crypto.createHash("md5").update(password).digest("hex");
+		let pass = new Buffer.from("salt_11" + password).toString('base64')
+		let login_info = {
+			passwd: passwd,
+			pass: pass,
+			remember_password: "",
+			username: username
+		}
 		this.host = host
 		this.port = port
 		this.login_info = login_info
