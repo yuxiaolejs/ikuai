@@ -10,7 +10,7 @@ Node SDK for iKuai Router System
 ## 更新内容 Update
   * 新增了信息编码模块，现在可以支持直接输入用户名密码登陆了
   * 更新了文档，加入了一个例子
-
+  * 更新了github
 ## 安装 Installation
 ```bash
 $ npm install ikuai
