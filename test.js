@@ -1,7 +1,7 @@
 const ikuai = require("./index.js")
 async function go() {
-	myRouter = new ikuai("", , "", "", true)
-	res = await myRouter.login()
+	myRouter = new ikuai("example.com", 8443, true)
+	res = await myRouter.login("admin","admin")
 	console.log(res)
 	param = {
 		"ORDER": "", //留空即可 Empty
